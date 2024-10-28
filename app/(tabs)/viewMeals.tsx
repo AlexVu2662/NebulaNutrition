@@ -205,11 +205,10 @@ export default function ViewMealsScreen() {
       headerImage={
         <Image
           source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
         />
       }>
       <ThemedView style={styles.mainContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title">View your meal history here!</ThemedText>
         <SQLiteDemo />
       </ThemedView>
     </ParallaxScrollView>
