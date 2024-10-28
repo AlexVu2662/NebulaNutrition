@@ -1,7 +1,6 @@
 import { Image, StyleSheet, Platform, FlatList, Text, View } from 'react-native';
 import React, { Component } from 'react';
 import SQLite from 'react-native-sqlite-storage';
-import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
@@ -105,7 +104,7 @@ class SQLiteDemo extends Component<{}, SQLiteDemoState> {
     this.updateProgress("Executing INSERT statements");
 
     // Insert sample data
-    tx.executeSql(`INSERT INTO Employees (name, office, department, custom_info) VALUES ("Oatmeal", 40, 50')`);
+    tx.executeSql(`INSERT INTO Meals (name, calories, carbs) VALUES ("Oatmeal", 40, 50')`);
     // ... other insert statements
   };
 
