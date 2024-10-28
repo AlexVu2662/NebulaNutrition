@@ -104,7 +104,7 @@ class SQLiteDemo extends Component<{}, SQLiteDemoState> {
     this.updateProgress("Executing INSERT statements");
 
     // Insert sample data
-    tx.executeSql(`INSERT INTO Meals (name, calories, carbs) VALUES ("Oatmeal", 40, 50')`);
+    tx.executeSql(`INSERT INTO Meals (id, name, calories, carbs) VALUES (1, "Oatmeal", 40, 50')`);
     // ... other insert statements
   };
 
